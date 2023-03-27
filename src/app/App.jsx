@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react'
-// import { Header } from "../entities/Header";
+import { Header } from "../entities/Header";
 import './index.css'
 import data from '../data/pokedex.json'
+import AppRouter from './providers/router/ui/AppRouter';
 
 function App() {
 
@@ -19,17 +20,11 @@ useEffect(()=>{
   }
 },[])
 
-useEffect(()=>{
-  if(baseData){
-    console.log(baseData)
-  }
-},[baseData])
-
 
   return (
     <div className="App">
-      {/* <Header /> */}
-      Hello
+      <Header />
+      <AppRouter baseData={baseData} />
     </div>
   );
 }

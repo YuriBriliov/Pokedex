@@ -1,10 +1,18 @@
-import React from 'react';
+import React, { Suspense, useState, useEffect } from 'react';
+import { Route, Routes } from 'react-router-dom';
+import { DetailPage } from '../../../../pages/DetailPage';
+import { Main } from '../../../../pages/Main';
 
-const AppRouter = () => {
+
+const AppRouter = ({ baseData }) => {
+
   return (
-    <div>
-      Router
-    </div>
+      <Suspense fallback={<div>...Loading</div>}>
+        <Routes>
+          <Route path='/' element={<Main elements={baseData}/>}/>
+          <Route path='/:id' element={<DetailPage detailList={baseData}/>} />
+        </Routes>
+      </Suspense>
   );
 };
 
