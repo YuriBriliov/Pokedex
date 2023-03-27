@@ -1,0 +1,48 @@
+.marginText {
+  margin: 10px 0px;
+  }
+  
+  .profile_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  
+  .right_side {
+    max-width: 800px;
+    min-width: 320px;
+    width: 50%;
+  }
+  
+  .right_side_info {
+    max-width: 50vw;
+    width: 50%;
+    padding: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: 20px;
+  }
+  
+  
+  .image_block {
+    max-width: 400px;
+    width: 100% !important;
+    margin: 10px auto;
+  }
+  
+  .button_back {
+    padding: 5px 10px;
+    margin: 5px;
+    background: none;
+    border: 1px solid #010101;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
